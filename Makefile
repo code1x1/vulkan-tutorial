@@ -9,9 +9,9 @@ VulkanTest: src/main.cpp buildDir
 	g++ $(CFLAGS) -o build/VulkanTest src/main.cpp $(LDFLAGS)
 
 test: VulkanTest
-	./build/VulkanTest
+	./build/VulkanTest;
 
 clean:
-	rm -f build/VulkanTest
+	rm -rf build/
 
-.PHONY: test clean
+.PHONY: test clean buildDir
